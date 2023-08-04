@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Song Guesser{% endblock %}
+
+{% block content %}
+
+<div class="content">
+  {% from 'bootstrap5/form.html' import render_form %}
+  <div class="mx-5">
+    <p class="text-center">Enter the Spotify Playlist URL and the Amount of songs to import.</p>
+    {{ render_form(form, novalidate=True) }}
+  </div>
+</div>
+
+{% endblock %}
